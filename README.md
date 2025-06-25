@@ -1,12 +1,90 @@
-# React + Vite
+# 🎓 Student Feedback Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and modern React application for submitting and managing student feedback. Built with **Vite**, **React**, **Tailwind CSS**, and **shadcn/ui** components.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Preview
 
-## Expanding the ESLint configuration
+*(Add a screenshot named `preview.png` if available)*
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+- 📝 Add student feedback with name, comment, and rating
+- 🗑️ Delete feedback entries easily
+- 💬 Toast notifications for actions (using `sonner`)
+- 💡 Sleek UI using [shadcn/ui](https://ui.shadcn.com/)
+- ⚛️ Component-based design powered by React + Vite
+- 🎨 Styled with Tailwind CSS
+
+---
+
+## 🛠️ Tech Stack
+
+- **React** – Frontend library
+- **Vite** – Fast build tool
+- **Tailwind CSS** – Utility-first styling
+- **shadcn/ui** – Beautiful, accessible UI components
+- **sonner** – Lightweight toast notifications
+
+---
+
+## 📁 Folder Structure
+
+student-feedback-app/
+├── public/
+├── src/
+│ ├── components/
+│ │ ├── FeedbackForm.jsx
+│ │ ├── FeedbackItem.jsx
+│ │ └── FeedbackList.jsx
+│ ├── App.jsx
+│ └── main.jsx
+├── .gitignore
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+
+
+---
+
+## 🚀 Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/AmosBaya/student-feedback-App.git
+   cd student-feedback-app
+
+2. **Install dependencies**
+    pnpm install
+    # or
+    npm install
+
+3. **Run the dev server**
+    pnpm dev
+    # or
+    npm run dev
+
+4. **Visit** 
+   Open your browser at http://localhost:5173 
+
+✅ Todo (Optional Enhancements)
+ Add backend support (e.g., Firebase, Supabase)
+
+ Save feedback to a database
+
+ Add filters or search functionality
+
+ Show average rating
+
+
+📜 License
+MIT © 2025 Amos Baya
+
+🙌 Credits
+shadcn/ui for clean and accessible UI components
+
+sonner for sleek toast notifications
