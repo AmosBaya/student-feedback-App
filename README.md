@@ -6,7 +6,7 @@ A clean and modern React application for submitting and managing student feedbac
 
 ## 📸 Preview
 
-*(Add a screenshot named `preview.png` if available)*
+(appshot.png)
 
 ---
 
