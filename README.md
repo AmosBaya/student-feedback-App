@@ -4,12 +4,6 @@ A clean and modern React application for submitting and managing student feedbac
 
 ---
 
-## 📸 Preview
-
-(./appshot.png)
-
----
-
 ## ✨ Features
 
 - 📝 Add student feedback with name, comment, and rating
