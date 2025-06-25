@@ -1,7 +1,9 @@
 import { useState } from "react";
-import { Input } from "@components/ui/input";
-import { Textarea } from "@components/ui/textarea";
-import { Button } from "@components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
+
 
 export default function FeedbackForm({onAdd}) {
     const [ name, setName ] = useState("");
@@ -18,6 +20,8 @@ export default function FeedbackForm({onAdd}) {
         setName("");
         setComment("");
         setRating("")
+
+        toast("Feedback submited Successfully")
     };
 
     return(
