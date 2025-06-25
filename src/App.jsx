@@ -1,6 +1,8 @@
 import { useState } from "react";
 import FeedbackForm from "@/components/FeedbackForm";
 import FeedbackList from "@/components/FeedbackList";
+import { Toaster } from "@/components/ui/sonner";
+import { toast } from "sonner";
 
 export default function App(){
   const [feedbacks, setFeedbacks] = useState([])
@@ -12,6 +14,7 @@ export default function App(){
 
   const deleteFeedback = (index) =>{
     setFeedbacks(prev => prev.filter((_, i) => i !== index ));
+    toast("Feedback Deleted")
   };
    // ["great", "needs improvement", "excellent"]
    // ["great", "excellent"]
@@ -20,6 +23,7 @@ export default function App(){
       <h1 className="text-3xl font-bold">Student Feedback Tracker</h1>
       <FeedbackForm onAdd={addFeedback}/>
       <FeedbackList feedbacks={feedbacks} onDelete={deleteFeedback}/>
+      <Toaster />
     </div>
   )
 }
